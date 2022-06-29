@@ -25,27 +25,37 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         estado = new String[]{
                 "Amazonas",
+                "Mato Grosso",
+                "Mato Grosso do Sul",
                 "Minas Gerais",
                 "Santa Catarina",
                 "São Paulo",
                 "Rio de Janeiro",
+                "Espírito Santo",
                 "Rio Grande do Sul",
+                "Pernambuco",
                 "Acre",
                 "Bahia",
                 "Pará",
-                "Piauí"
+                "Piauí",
+                "Paraná"
         };
         capital = new String[]{
                 "Manaus",
+                "Cuiabá",
+                "Campo Grande",
                 "Belo Horizonte",
                 "Florianópolis",
                 "São Paulo",
                 "Rio de Janeiro",
+                "Vitória",
                 "Porto Alegre",
+                "Recife",
                 "Rio Branco",
                 "Salvador",
                 "Belém",
-                "Teresina"
+                "Teresina",
+                "Curitiba"
         };
         Random r = new Random();
         qtd = r.nextInt(10);
