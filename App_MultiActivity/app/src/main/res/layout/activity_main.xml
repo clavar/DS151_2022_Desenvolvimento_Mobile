@@ -22,7 +22,7 @@
         android:id="@+id/et_nome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="17dp"
+        android:layout_marginStart="21dp"
         android:ems="10"
         android:hint="nome"
         android:inputType="textPersonName"
@@ -37,7 +37,7 @@
         android:layout_marginStart="25dp"
         android:layout_marginBottom="321dp"
         android:text="FREQ.:"
-        android:textSize="30sp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -46,8 +46,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
-        android:text="nota1"
-        android:textSize="30sp"
+        android:text="nota1:"
+        android:textSize="25sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/et_nota1"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -68,8 +68,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
-        android:text="nota2"
-        android:textSize="30sp"
+        android:text="nota2:"
+        android:textSize="25sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/et_nota2"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -105,7 +105,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="145dp"
         android:text="Nome:"
-        android:textSize="30sp"
+        android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

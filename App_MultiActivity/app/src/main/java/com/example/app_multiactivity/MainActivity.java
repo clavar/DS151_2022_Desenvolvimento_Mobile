@@ -25,14 +25,13 @@ public class MainActivity extends AppCompatActivity {
         EditText nota2 = findViewById(R.id.et_nota2);
         EditText freq = findViewById(R.id.et_freq);
 
-        try {
-            String nomeAluno = nome.getText().toString();
-            int frequencia = Integer.parseInt(freq.getText().toString());
-            Double notaum = Double.parseDouble(nota1.getText().toString());
-            Double notadois = Double.parseDouble(nota2.getText().toString());
-            Double media = (notaum + notadois) / 2;
-            String resultado;
-
+        String nomeAluno = nome.getText().toString();
+        int frequencia = Integer.parseInt(freq.getText().toString());
+        Double notaum = Double.parseDouble(nota1.getText().toString());
+        Double notadois = Double.parseDouble(nota2.getText().toString());
+        Double media = (notaum + notadois) / 2;
+        String resultado;
+        //try {
             if (100 < frequencia || 0 > frequencia || 10 < notaum || 0 > notaum || 10 < notadois || 0 > notadois) {
                 Toast.makeText(this, "Valores inválidos!", Toast.LENGTH_SHORT).show();
             } else {
@@ -47,18 +46,24 @@ public class MainActivity extends AppCompatActivity {
                         resultado = "Final!";
                     }
                 }
+                System.out.println("teste passou aqui");
                 Intent it = new Intent(this,DetailActivity.class);
                 Bundle params = new Bundle();
                 params.putString("Media", String.valueOf(media));
-                params.putString("Resultado", String.valueOf(resultado));
-                params.putString("Nome", String.valueOf(nome));
+                params.putString("Resultado", resultado);
+                params.putString("Nome", nomeAluno);
                 it.putExtras(params);
+                System.out.println("2 teste passou aqui");
+
                 startActivity(it);
+
+                System.out.println("3 teste passou aqui");
+
 
                 //AQUI PASSAMOS PARA A OUTRA ACTIVITY
             }
-        } catch (Exception e) {
+        /*} catch (Exception e) {
             Toast.makeText(this, "Os campos não podem estar em branco", Toast.LENGTH_SHORT).show();
-        }
+        }*/
     }
 }

@@ -12,21 +12,26 @@ public class DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+        System.out.println("0 teste passou aqui");
 
-        TextView mediaView = findViewById(R.id.mediaTextView);
-        TextView nomeView = findViewById(R.id.nomeTextView);
-        TextView situacaoView = findViewById(R.id.situacaoTextView);
+        TextView mediaView = findViewById(R.id.textViewMedia);
+        TextView nomeView = findViewById(R.id.textViewNome);
+        TextView situacaoView = findViewById(R.id.textViewSituacao);
 
         Intent it = getIntent();
-        Bundle params = it.getExtras();
-        String media = params.getString("Media");
-        String resultado = params.getString("Resultado");
-        String nome = params.getString("Nome");
-        mediaView.setText(media);
-        nomeView.setText(nome);
-        situacaoView.setText(resultado);
+        if (it != null) {
+            Bundle params = it.getExtras();
+            if (params != null) {
+                String media = params.getString("Media");
+                String resultado = params.getString("Resultado");
+                String nome = params.getString("Nome");
+
+                mediaView.setText(media);
+                nomeView.setText(nome);
+                situacaoView.setText(resultado);
+            }
 
 
+        }
     }
-
 }
