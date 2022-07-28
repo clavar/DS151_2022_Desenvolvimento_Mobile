@@ -49,37 +49,24 @@ import android.widget.Button;
         }
     }
 
-    public void irCadastro (View view ){
+    public void irCadastro (){
         Intent it = new Intent(this,CadastroActivity.class);
         startActivity(it);
         System.out.println("ir cadastro");
     }
-    public void irExtrato (View view ){
+    public void irExtrato (){
         Intent it = new Intent(this,ExtratoActivity.class);
         startActivity(it);
         System.out.println("ir cadastro");
-        }
-        public void irSair (View view ){
+    }
 
-        }
+    public void irSair (){
+        finishAndRemoveTask();
+    }
 
-
-}
-
-    public void calcular(View view) {
-
-        EditText nome = findViewById(R.id.et_nome);
-        EditText nota1 = findViewById(R.id.et_nota1);
-        EditText nota2 = findViewById(R.id.et_nota2);
-        EditText freq = findViewById(R.id.et_freq);
-
-        String nomeAluno = nome.getText().toString();
-        int frequencia = Integer.parseInt(freq.getText().toString());
-        Double notaum = Double.parseDouble(nota1.getText().toString());
-        Double notadois = Double.parseDouble(nota2.getText().toString());
-        Double media = (notaum + notadois) / 2;
-        String resultado;
 
 }
+
+
 
 

@@ -12,18 +12,18 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="33dp"
         android:text="Descrição:"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editTextDescricao2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextDescricaoCadastro"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextDescricao2"
+        android:id="@+id/editTextDescricaoCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="31dp"
         android:layout_marginBottom="50dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/editTextValor"
+        app:layout_constraintBottom_toTopOf="@+id/editTextValorCadastro"
         app:layout_constraintStart_toEndOf="@+id/textView3" />
 
     <TextView
@@ -56,14 +56,14 @@
         app:layout_constraintTop_toBottomOf="@+id/radioButton" />
 
     <EditText
-        android:id="@+id/editTextValor"
+        android:id="@+id/editTextValorCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="236dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/editTextDescricao2" />
+        app:layout_constraintStart_toStartOf="@+id/editTextDescricaoCadastro" />
 
     <TextView
         android:id="@+id/textView2"
@@ -71,7 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="33dp"
         android:text="Valor:"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editTextValor"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextValorCadastro"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -82,7 +82,7 @@
         android:layout_marginTop="34dp"
         android:onClick="efetuarCadastro"
         android:text="Cadastrar"
-        app:layout_constraintStart_toStartOf="@+id/editTextValor"
-        app:layout_constraintTop_toBottomOf="@+id/editTextValor" />
+        app:layout_constraintStart_toStartOf="@+id/editTextValorCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/editTextValorCadastro" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
