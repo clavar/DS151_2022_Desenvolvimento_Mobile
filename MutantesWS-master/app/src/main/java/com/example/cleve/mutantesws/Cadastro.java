@@ -34,7 +34,6 @@ import java.util.Map;
 
 public class Cadastro extends AppCompatActivity {
 
-
     private int cont = 1;
     private EditText parent;
     private ConstraintLayout layout;
@@ -156,6 +155,7 @@ public class Cadastro extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError erro) {
+                    System.out.println(erro);
                     android.widget.Toast.makeText(contexto, "Falha na conexão", Toast.LENGTH_LONG).show();
                     android.widget.Toast.makeText(contexto, erro.toString(), Toast.LENGTH_LONG).show();
                 }

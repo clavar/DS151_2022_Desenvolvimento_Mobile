@@ -59,6 +59,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError erro) {
                 android.widget.Toast.makeText(contexto, "Falha na conexão", Toast.LENGTH_LONG).show();
+                System.out.println(erro);
             }
         });
 
