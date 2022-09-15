@@ -14,7 +14,8 @@ import com.android.volley.toolbox.ImageLoader;
 
 public class Volley {
                                         //linux = hostname -I
-    public static final String URL = "http://192.168.15.12:81/wsmutantes/";
+    //public static final String URL = "http://192.168.15.12:81/wsmutantes/";
+    public static final String URL = "http://192.168.43.188:81/wsmutantes/";
 
     private static Volley instancia;
     private static Context contexto;

@@ -111,7 +111,7 @@ public class Listar extends ListActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError erro) {
-                android.widget.Toast.makeText(contexto, "Falha na conexão", Toast.LENGTH_LONG).show();
+                android.widget.Toast.makeText(contexto, "Erro isso nao pode", Toast.LENGTH_LONG).show();
             }
         });
 

@@ -107,7 +107,7 @@ public class Cadastro extends AppCompatActivity {
         //imagem
         Bitmap bm= ((BitmapDrawable)foto.getDrawable()).getBitmap();
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-        bm.compress(Bitmap.CompressFormat.PNG, 50, outputStream);
+        bm.compress(Bitmap.CompressFormat.JPEG, 50, outputStream);
         byte[] b = outputStream.toByteArray();
         final String img=  Base64.encodeToString(b, Base64.DEFAULT);
 
