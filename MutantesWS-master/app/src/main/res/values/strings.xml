@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MutantesWS</string>
+    <string name="title_activity_cadastro">Cadastro</string>
+    <string name="title_activity_listar">Listar</string>
+    <string name="title_activity_pesquisar">Pesquisar</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_main">Main</string>
+    <string name="title_activity_login">Login</string>
+</resources>
